@@ -1,0 +1,139 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --colorBG:hsl(30, 54%, 90%);
+    --grey:hsl(30, 18%, 87%);
+    --colorPrimary:hsl(30, 10%, 34%);
+    --colorSecondary:hsl(24, 5%, 18%);
+    --colorHeader:hsl(14, 45%, 36%);
+    --roseDarck:hsl(332, 51%, 32%);
+    --rose:hsl(330, 100%, 98%);
+
+    --fontPrimary:"Young Serif", serif;
+    --fontSecondary:"Outfit", serif;
+
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    color: var(--colorPrimary);
+    font-family: var(--fontSecondary);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--colorBG);
+
+    
+}
+
+.mod--header{
+    color: var(--colorHeader);
+    font-size: 2.8rem;
+    font-family: var(--fontPrimary);
+}
+.box {
+    background-color: var(--white);
+}
+.container{
+    padding: 2rem;
+    
+}
+.bold {
+    font-weight: 700;
+}
+.list {
+    padding-left: 2rem;
+}
+.border{
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 2rem;
+}
+/* Header */
+
+.header__img {
+    background-image: url(assets/images/image-omelette.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+
+.container__title{
+    font-family: var(--fontPrimary);
+    font-size: 4.8rem;
+    color: var(--colorSecondary);
+    line-height: 1.2;
+}
+/* preparation */
+.container__preparation {
+    background-color: var(--rose);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.preparation__title {
+    color: var(--roseDarck);
+    font-size: 2rem;
+}
+.preparation__list li::marker {
+    color: var(--roseDarck);
+    
+}
+
+/* ingredients */
+
+.ingredients__list{
+    list-style-type: square;
+}
+.ingredients__list li::marker{
+    color: var(--colorHeader);
+}
+
+/* intructions */
+
+.intructions__list li::marker {
+        color: var(--colorHeader);
+        font-weight: 700;
+}
+/* nutrition */
+
+
+.nutrition__table {
+    display: flex;
+    flex-direction: column;
+    
+}
+.table {
+    display: flex;
+   flex-direction: row; 
+   justify-content: space-around;
+}
+.table .bold{
+    color: var(--colorHeader);
+}
+
+@media (min-width: 1440px) {
+    .box{
+        width: 60%;
+        margin: 10rem auto;
+        border-radius: 3rem;
+        padding: 2rem;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .header__img {
+        border-radius: 3rem ;
+        height: 50rem;
+    }
+    .table{
+        padding-right: 30rem;
+    }
+}
